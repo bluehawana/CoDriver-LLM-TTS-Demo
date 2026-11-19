@@ -23,7 +23,7 @@ One shift on the E20, three agents, about 10 minutes. Press play:
 https://github.com/user-attachments/assets/56f50f30-22ff-48d0-af14-e1896f48e722
 
 - **Full quality** — [watch the recording on Google Drive](https://drive.google.com/file/d/1u1qIA6HCn9VLD2NqWwFMMV02MR_s5Lue/view?usp=sharing); no sign-in needed.
-- **Slides** — [open them in your browser](https://htmlpreview.github.io/?https://github.com/bluehawana/CoDriver-LLM-TTS-Demo/blob/main/slides/index.html); arrow keys to navigate. Everything on the slides is also written out below.
+- **Slides** — [open them in your browser](https://bluehawana.com/codriver/slides/); arrow keys to navigate. Everything on the slides is also written out below.
 
 [![Co-Driver in the cab, Fleet Manager and ClaimBot side by side](./docs/img/demo-play.jpg)](https://drive.google.com/file/d/1u1qIA6HCn9VLD2NqWwFMMV02MR_s5Lue/view?usp=sharing)
 
