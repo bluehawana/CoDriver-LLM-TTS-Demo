@@ -6,7 +6,7 @@ This is not a voice assistant bolted onto a cockpit. It is not Alexa, not Google
 
 **In a hurry?** [Watch the demo](#watch-the-demo) (10 min) · [Architecture](#architecture) · [How it's built](#how-its-built) · [About the source code](#about-the-source-code)
 
-> This is the demo repository: the recording, the slides and a description of how the system works. The source code is private and **can be reviewed on request** — see [About the source code](#about-the-source-code).
+> This is the demo repository: the recording, the slides and a description of how the system works. The source code is private and **can be reviewed on request** — see [About the source code](#about-the-source-code). The slides and recording belong to Harvad Li; contact the owner before any business use — see [Ownership and use](#ownership-and-use).
 
 | | |
 |---|---|
@@ -193,4 +193,12 @@ The system has two halves: a thin app on the truck's head unit, and a backend wh
 
 If you are evaluating this work — for example in an interview process — ask, and I will walk you through the real code, the architecture decisions and a live run.
 
-Everything in this repository (text, recording, slides) is shared for viewing only. All rights reserved.
+## Ownership and use
+
+**© 2026 Harvad Li. All rights reserved.**
+
+The slides, the recording and the text in this repository belong to the owner of this repository, Harvad Li. They are shared for viewing and evaluation only.
+
+Any commercial or business use — including copying, redistributing, presenting or building on this material — requires the owner's written permission first. Using it without permission risks infringing intellectual-property rights.
+
+To ask for permission, or to request a code review, contact the owner through [GitHub](https://github.com/bluehawana) or [bluehawana.com](https://bluehawana.com/pages/contact.html).
