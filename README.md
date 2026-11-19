@@ -6,7 +6,7 @@ This is not a voice assistant bolted onto a cockpit. It is not Alexa, not Google
 
 **In a hurry?** [Watch the demo](#watch-the-demo) (10 min) · [Architecture](#architecture) · [How it's built](#how-its-built) · [About the source code](#about-the-source-code)
 
-> This is the demo repository: the recording, the slides and a description of how the system works. The source code is private and **can be reviewed on request** — see [About the source code](#about-the-source-code). The slides and recording belong to Harvad Li; contact the owner before any business use — see [Ownership and use](#ownership-and-use).
+> This is the demo repository: the recording, the slides and a description of how the system works. The source code is private and **can be reviewed on request** — see [About the source code](#about-the-source-code). This project belongs to Harvad Li. You may view it, but nothing here may be used without the owner's written permission — see [Ownership and use](#ownership-and-use).
 
 | | |
 |---|---|
@@ -197,8 +197,8 @@ If you are evaluating this work — for example in an interview process — ask,
 
 **© 2026 Harvad Li. All rights reserved.**
 
-The slides, the recording and the text in this repository belong to the owner of this repository, Harvad Li. They are shared for viewing and evaluation only.
+This project belongs to Harvad Li. The slides, the recording, the text and the ideas shown in this repository are the owner's property.
 
-Any commercial or business use — including copying, redistributing, presenting or building on this material — requires the owner's written permission first. Using it without permission risks infringing intellectual-property rights.
+**You may view this material. You may not use it.** Copying, downloading for reuse, redistributing, presenting, adapting or building on any part of it — for business or for any other purpose — is not allowed without the owner's written permission. This repository carries no licence, and nothing here grants one. Use without permission infringes the owner's intellectual-property rights.
 
 To ask for permission, or to request a code review, contact the owner through [GitHub](https://github.com/bluehawana) or [bluehawana.com](https://bluehawana.com/pages/contact.html).
