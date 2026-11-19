@@ -6,7 +6,7 @@ This is not a voice assistant bolted onto a cockpit. It is not Alexa, not Google
 
 **In a hurry?** [Watch the demo](#watch-the-demo) (10 min) · [Architecture](#architecture) · [How it's built](#how-its-built) · [About the source code](#about-the-source-code)
 
-> This repository is the public showcase: the recording, the slides and a description of how the system works. The source code is kept private — see [About the source code](#about-the-source-code).
+> This is the demo repository: the recording, the slides and a description of how the system works. The source code is private and **can be reviewed on request** — see [About the source code](#about-the-source-code).
 
 | | |
 |---|---|
@@ -18,13 +18,11 @@ This is not a voice assistant bolted onto a cockpit. It is not Alexa, not Google
 
 ## Watch the demo
 
-[![Demo recording: Co-Driver in the cab, Fleet Manager and ClaimBot side by side](./docs/img/demo-three-agents.jpg)](./docs/media/co-driver-three-agents-demo.mp4)
+[![Play the demo recording: Co-Driver in the cab, Fleet Manager and ClaimBot side by side](./docs/img/demo-play.jpg)](https://drive.google.com/file/d/1u1qIA6HCn9VLD2NqWwFMMV02MR_s5Lue/view?usp=sharing)
 
-One shift on the E20, three agents, about 10 minutes:
+**▶ [Click to play the recording](https://drive.google.com/file/d/1u1qIA6HCn9VLD2NqWwFMMV02MR_s5Lue/view?usp=sharing)** — one shift on the E20, three agents, about 10 minutes. It opens in Google Drive's player; no sign-in needed. A compressed copy is also [in this repo](./docs/media/co-driver-three-agents-demo.mp4).
 
-- **▶ [Watch the recording on Google Drive](https://drive.google.com/file/d/1u1qIA6HCn9VLD2NqWwFMMV02MR_s5Lue/view?usp=sharing)** — full quality, no sign-in needed
-- **▶ [Play it here in the repo](./docs/media/co-driver-three-agents-demo.mp4)** — compressed copy, plays in GitHub's viewer
-- **Slides** — [`slides/index.html`](./slides/index.html); download and open in a browser, arrow keys to navigate. The sections below carry the same content.
+**Slides** — [`slides/index.html`](./slides/index.html); download and open in a browser, arrow keys to navigate. Everything on the slides is also written out below.
 
 On screen: the truck's Android Automotive head unit (left), the haulier's Fleet Manager desk (right) and Volvo Group's ClaimBot (bottom). Every hand-off between them is a real agent turn.
 
@@ -101,6 +99,14 @@ From a cockpit system to an ecosystem:
 4. **A blue ocean** — fewer competitors and higher margins than trucks sold on price and payload.
 5. **From products to products plus services** — subscriptions per truck, per fleet, per contract tier. Recurring and Volvo-owned.
 
+### The ask
+
+> If not us, who? If not now, when?
+
+1. Approve a pilot of the three-agent system on real Volvo trucks — the hardest part is already proven.
+2. Keep it in-house: Volvo's voice, Volvo's data, Volvo's intelligence layer across cab, desk and office.
+3. Make the intelligent vehicle ecosystem a Volvo decision, before someone makes it for us.
+
 ## Architecture
 
 Thin client in the cab, one brain in the cloud, three faces.
@@ -132,6 +138,16 @@ Every request takes the same path: speech → text → LLM → tools → action 
 - **Speech** — Whisper for speech-to-text in any language; text-to-speech is rendered server-side, so the cab only records and plays.
 - **LLM** — Gemma 4 12B on Ollama runs the agent and its tool calls, with a small MLX model as failover. The interface is OpenAI-compatible, so the model can be swapped.
 - **Cloud** — Python FastAPI. The Co-Driver agent loop, the ClaimBot and Fleet Manager agents, the fleet dashboard and a 14-truck scenario fleet all work on the same plate-keyed record.
+
+### Tech summary
+
+| Layer | What is used |
+|---|---|
+| **Vehicle — the thin client** | Android Automotive OS 15 (AOSP) · Kotlin app with a WebView UI · ExoPlayer audio · on-device wake word · Spotify App Remote SDK · Google Maps intents |
+| **Speech in, speech out** | Whisper large-v3-turbo for speech-to-text in any language · server-side text-to-speech to WAV — the cab only records and plays |
+| **LLM — the brain** | Gemma 4 12B on Ollama for the agent and tool calling, benchmarked against larger and rival models · a small Qwen model on MLX as failover · nomic-embed for the knowledge base · OpenAI-compatible, so any model can be swapped in |
+| **Cloud — three agents, one record** | Python FastAPI · the Co-Driver agent loop · ClaimBot and Fleet Manager chat agents on the same plate-keyed record · fleet dashboard · official APIs only: Google Maps, Spotify, Open-Meteo, Yahoo Finance, Nominatim/OSRM, DuckDuckGo |
+| **Development platform** | MacBook Pro M5 Max 128 GB running the LLMs locally · Android Studio with the Automotive emulator · Claude Code as AI pair-programmer · every demo run logged, every turn timed |
 
 ## How it's built
 
@@ -170,8 +186,8 @@ The system has two halves: a thin app on the truck's head unit, and a backend wh
 
 ## About the source code
 
-The code is in a private repository and is not published here. The project is a prototype that has been presented inside Volvo Group as a pilot proposal, and publishing the implementation could raise intellectual-property questions. It is not an official Volvo product.
+**The code can be reviewed on request.** It lives in a private repository and is not published here: the project is a prototype that has been presented inside Volvo Group as a pilot proposal, and publishing the implementation could raise intellectual-property questions. It is not an official Volvo product.
 
-I'm glad to walk through the real code, the architecture decisions and a live run in a private conversation — for example as part of an interview process.
+If you are evaluating this work — for example in an interview process — ask, and I will walk you through the real code, the architecture decisions and a live run.
 
 Everything in this repository (text, recording, slides) is shared for viewing only. All rights reserved.
