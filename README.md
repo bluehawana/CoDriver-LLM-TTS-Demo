@@ -18,11 +18,14 @@ This is not a voice assistant bolted onto a cockpit. It is not Alexa, not Google
 
 ## Watch the demo
 
-[![Play the demo recording: Co-Driver in the cab, Fleet Manager and ClaimBot side by side](./docs/img/demo-play.jpg)](https://drive.google.com/file/d/1u1qIA6HCn9VLD2NqWwFMMV02MR_s5Lue/view?usp=sharing)
+One shift on the E20, three agents, about 10 minutes. Press play:
 
-**▶ [Click to play the recording](https://drive.google.com/file/d/1u1qIA6HCn9VLD2NqWwFMMV02MR_s5Lue/view?usp=sharing)** — one shift on the E20, three agents, about 10 minutes. It opens in Google Drive's player; no sign-in needed. A compressed copy is also [in this repo](./docs/media/co-driver-three-agents-demo.mp4).
+https://github.com/user-attachments/assets/56f50f30-22ff-48d0-af14-e1896f48e722
 
-**Slides** — [`slides/index.html`](./slides/index.html); download and open in a browser, arrow keys to navigate. Everything on the slides is also written out below.
+- **Full quality** — [watch the recording on Google Drive](https://drive.google.com/file/d/1u1qIA6HCn9VLD2NqWwFMMV02MR_s5Lue/view?usp=sharing); no sign-in needed.
+- **Slides** — [open them in your browser](https://bluehawana.github.io/CoDriver-LLM-TTS-Demo/slides/); arrow keys to navigate. Everything on the slides is also written out below.
+
+[![Co-Driver in the cab, Fleet Manager and ClaimBot side by side](./docs/img/demo-play.jpg)](https://drive.google.com/file/d/1u1qIA6HCn9VLD2NqWwFMMV02MR_s5Lue/view?usp=sharing)
 
 On screen: the truck's Android Automotive head unit (left), the haulier's Fleet Manager desk (right) and Volvo Group's ClaimBot (bottom). Every hand-off between them is a real agent turn.
 
